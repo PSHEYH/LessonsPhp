@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('slug')->unque();
             $table->text('body');
             $table->string('img');
+            $table->timestamp('published_at');
             $table->timestamps();
         });
     }

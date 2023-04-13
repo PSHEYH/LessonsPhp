@@ -9,7 +9,13 @@ class Comment extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['subject', 'body', 'article_id'];
+
     public function article(): BelongsTo{
         return $this->belongsTo(Article::class);
+    }
+
+    public function createdAtForHumans(){
+        return $this->created_at->diffForHumans();
     }
 }

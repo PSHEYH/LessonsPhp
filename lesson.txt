@@ -17,3 +17,10 @@ php artisan make:factory StateFactory --model=State
 
 
 php artisan migrate:refresh --seed
+
+php artisan make:controller HomeController
+
+composer require barryvdh/laravel-debugbar --dev
+composer require barryvdh/laravel-ide-helper --dev
+composer require laravel/ui
+
